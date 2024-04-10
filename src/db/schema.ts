@@ -12,7 +12,10 @@ export const posts = sqliteTable('posts', {
   content: text('content', { length: 256 }).notNull(),
 
   // timestamp is set on insert
-  timestamp: text('timestamp')
+  createdAt: text('created_at')
     .default(sql`CURRENT_TIMESTAMP`)
     .notNull(),
 });
+
+export type InsertPost = typeof posts.$inferInsert;
+export type SelectPost = typeof posts.$inferSelect;
