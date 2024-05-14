@@ -42,7 +42,6 @@ postsRouter.post(
 
     const db = drizzle(c.env.DB);
     const { title, content } = c.req.valid('form');
-    console.log('data:', { title, content });
 
     const post = await insertPost(db, { title, content, authorId: user.id });
     if (!post) {
