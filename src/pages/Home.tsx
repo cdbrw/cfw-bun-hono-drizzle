@@ -2,7 +2,7 @@ import MainLayout from '../layouts/MainLayout';
 
 export default function Home() {
   return (
-    <MainLayout isLoggedIn={false}>
+    <MainLayout>
       <section class="flex flex-col justify-center items-center mt-12">
         <h1 class="text-4xl">Hello! 👋</h1>
         <p>

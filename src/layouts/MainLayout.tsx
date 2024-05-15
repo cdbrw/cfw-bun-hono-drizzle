@@ -2,10 +2,13 @@ import Nav from '../components/Nav';
 
 type MainLayoutProps = {
   children: JSX.Element;
-  isLoggedIn: boolean;
+  isLoggedIn?: boolean;
 };
 
-export default function MainLayout({ children, isLoggedIn }: MainLayoutProps) {
+export default function MainLayout({
+  children,
+  isLoggedIn = false,
+}: MainLayoutProps) {
   return (
     <html>
       <head>
