@@ -19,19 +19,14 @@ bunx wrangler d1 create cfw-bun-hono-drizzle-d1
 ```
 
 4. Add D1 database credentials to wrangler.toml
-5. Run the local SQLite database
 
-```
-bun run db:up
-```
-
-6. Apply migrations to local database
+5. Apply migrations to local database
 
 ```
 bunx wrangler d1 execute cfw-bun-hono-drizzle-d1 --local --file=./drizzle/migrations/<migration file name here>
 ```
 
-7. Start development server
+6. Start development server
 
 ```
 bun run dev
