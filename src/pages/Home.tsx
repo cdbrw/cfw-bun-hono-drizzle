@@ -6,7 +6,7 @@ export default function Home() {
       <section class="flex flex-col justify-center items-center mt-12">
         <h1 class="text-4xl">Hello! 👋</h1>
         <p>
-          Welcome to probably to worlds most underwhelming blogging application
+          Welcome to probably the worlds most underwhelming blogging application
           ...
         </p>
         <p class="mt-6">
